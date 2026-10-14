@@ -21,9 +21,19 @@ las canastas, arman su pedido y lo envían por WhatsApp.
   visibilidad de cada canasta en una hoja de cálculo, sin tocar código. Si la hoja no se puede leer,
   la página usa los datos que trae guardados.
 - **Carrito que se guarda** en el navegador (`localStorage`), así el pedido no se pierde al recargar.
-- **Cuenta regresiva a Navidad** en hora de Lima.
-- **Temas por festividad** (Navidad, Halloween, Fiestas Patrias, San Valentín, Día de la Madre, etc.)
-  con decoraciones animadas y pantalla de carga propia.
+- **El tema cambia solo según la fecha** (hora de Lima): Navidad, Mes morado, Halloween, Fiestas
+  Patrias, San Valentín, Día de la Madre y un tema clásico para el resto del año. Cada uno tiene su
+  decoración animada, su pantalla de carga y su cuenta regresiva. Se pueden ver todos con `?tema=`:
+  [navidad](https://juancarlosmendiolamorales-ui.github.io/catalogo-canastas-navidad/?tema=navidad) ·
+  [halloween](https://juancarlosmendiolamorales-ui.github.io/catalogo-canastas-navidad/?tema=halloween) ·
+  [patrias](https://juancarlosmendiolamorales-ui.github.io/catalogo-canastas-navidad/?tema=patrias) ·
+  [sanvalentin](https://juancarlosmendiolamorales-ui.github.io/catalogo-canastas-navidad/?tema=sanvalentin) ·
+  [madre](https://juancarlosmendiolamorales-ui.github.io/catalogo-canastas-navidad/?tema=madre) ·
+  [morado](https://juancarlosmendiolamorales-ui.github.io/catalogo-canastas-navidad/?tema=morado) ·
+  [clasico](https://juancarlosmendiolamorales-ui.github.io/catalogo-canastas-navidad/?tema=clasico)
+- **Animaciones con CSS y JavaScript puro:** partículas generadas con profundidad (nieve, pétalos,
+  confeti, luciérnagas), paralaje con el mouse, títulos con brillo, cuenta regresiva de vidrio y
+  fuegos artificiales. Respeta la opción "reducir movimiento" del sistema.
 - **Diseño responsive** y accesible: funciona en celular, con etiquetas para lectores de pantalla.
 - **Un solo archivo**: las imágenes van incrustadas, así se puede compartir o subir en cualquier lado.
 
@@ -39,6 +49,8 @@ GitHub Pages
   actualizar el catálogo.
 - Diseñar pensando primero en el celular, que es desde donde compran los clientes.
 - Trabajar con un cliente real: cambios de precios, fotos y temas según la temporada.
+- Animar sin librerías: keyframes con variables CSS, partículas generadas por JavaScript y
+  propiedades `translate`/`scale` independientes para combinar movimientos sin que choquen.
 
 Hecho con ayuda de [Claude Code](https://claude.com/claude-code) como asistente de programación.
 
