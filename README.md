@@ -52,7 +52,33 @@ GitHub Pages
 - Animar sin librerías: keyframes con variables CSS, partículas generadas por JavaScript y
   propiedades `translate`/`scale` independientes para combinar movimientos sin que choquen.
 
-Hecho con ayuda de [Claude Code](https://claude.com/claude-code) como asistente de programación.
+## Cómo trabajé con IA
+
+Construí este proyecto con **Claude Code** como asistente de programación. La división fue así:
+
+**Lo que propuse y decidí yo**
+- El proyecto: un negocio real (Canastas MIA). Con la dueña definí lo que necesitaba: catálogo,
+  pedidos por WhatsApp, sin envíos (se coordinan por chat) y atención directa.
+- Las funciones: precios editables desde Google Sheets (la dueña trabaja con Canva y hojas de
+  cálculo, no con código), temas por festividad que cambian solos según la fecha, pantallas de
+  carga cortas por tema, un panel para que la dueña siga sus pedidos y el Libro de Reclamaciones.
+- Las prioridades: dediqué un sprint completo a **revisar seguridad y errores** antes de agregar
+  funciones, y probé la página con un escáner de vulnerabilidades (Strix).
+- Las pruebas reales: revisarla en iPhone, mostrársela a la dueña y corregir lo que no se veía
+  bien (productos cortados, fotos, fondos).
+- El despliegue: configuré Render, Neon (PostgreSQL) y GitHub.
+
+**Lo que hizo Claude Code**
+- Escribir la mayor parte del código (HTML/CSS/JS, API en Node.js + Express, esquema SQL, pruebas
+  e integración continua) a partir de lo que yo pedía.
+- Proponer detalles técnicos de seguridad: límite de intentos de login, CORS, clave para no
+  duplicar pedidos, contraseñas con hash y sal.
+
+**Cómo me aseguré de entenderlo**
+Después de cada parte le pedí que me la explicara y me hiciera preguntas: frontend vs. backend,
+middleware, inyección SQL, transacciones, hash con sal, CORS, cómo se conectan Render y Neon.
+Respondí con mis palabras hasta entenderlo. Puedo explicar cualquier parte del código.
+
 
 ## Autor
 
